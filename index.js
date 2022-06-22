@@ -1,29 +1,22 @@
 const c = console.log.bind(document)
-const firstNo = document.querySelector('.first-no');
-const secondNo = document.querySelector('.second-no');
-const btn = document.querySelectorAll('.btn');
-const output = document.querySelector('output');
 
-const add = () => {
-  sum=Number(firstNo.value)+Number(secondNo.value)
-return output.innerHTML=sum
-}
-const subtract = () => {
-  sum=Number(firstNo.value)-Number(secondNo.value)
-return output.innerHTML=sum
-}
-const multiply = () => {
-  sum=Number(firstNo.value)*Number(secondNo.value)
-return output.innerHTML=sum
-}
-const divide = () => {
-  sum=Number(firstNo.value)/Number(secondNo.value)
-  sum=sum.toFixed(2)
-return output.innerHTML=sum
+
+
+const calculate =()=>{
+    const operator = prompt('what operation do you want to perform: +, -, *, / ');
+const firstNo = Number( prompt('first number'));
+const secondNo=Number(prompt('second number'));
+let sum=0
+operator=== '+'? sum=alert(`your answer is ${firstNo+secondNo}`):
+operator=== '-'? sum=alert(`your answer is ${firstNo-secondNo}`):
+operator=== '*'? sum=alert(`your answer is ${firstNo*secondNo}`):
+operator=== '/'? sum=alert(`your answer is ${firstNo/secondNo}`):
+alert('not a specified operator')
+
+
 }
 
 
-
-
+calculate()
 
 
