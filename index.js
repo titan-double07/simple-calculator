@@ -6,7 +6,7 @@ let calculation=0
 operator=== '+'?calculation=alert(`your answer is ${firstNo+secondNo}`):
 operator=== '-'? calculation=alert(`your answer is ${firstNo-secondNo}`):
 operator=== '*'? calculation=alert(`your answer is ${firstNo*secondNo}`):
-operator=== '/'? calculation=alert(`your answer is ${firstNo/secondNo}`):
+operator=== '/'? calculation=alert(`your answer is ${(firstNo/secondNo).toFixed(2)}`):
 alert('not a specified operator')
 
 
